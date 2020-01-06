@@ -1,12 +1,4 @@
-#ARbody {
-    background-image: url("fond.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 22% 4%;
-    margin: 0px;
-    padding: 0px;
-}
+/* -------------------- HEADER GENERAL -------------------- */
 
 nav {
     display: flex;
@@ -39,127 +31,24 @@ li:hover {
     background-color: rgb(79, 127, 199);
 }
 
-h1 {
-    font-style: italic;
-}
+
+/* -------------------- FOOTER GENERAL -------------------- */
 
 #ARfoot {
-    margin-top: 202px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
     height: 50px;
     background-color: rgb(40, 43, 43);
+    border: solid;
 }
 
 #copyright {
     color: white;
     text-align: center;
-    padding: 16px;
+    vertical-align: middle;
     font-size: 15px;
-}
-
-.titres {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.diaporama {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 380px;
-    height: 300px;
-    border: 3px solid #333;
-    background-image: url(ARimage1.jpg);
-    animation-name: diapo1;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes diapo1 {
-    20% {
-        background-image: url("ARimage1.jpg");
-    }
-    40% {
-        background-image: url("ARimage2.jpg");
-    }
-    60% {
-        background-image: url("ARimage3.jpg");
-    }
-    80% {
-        background-image: url("ARimage4.jpg");
-    }
-    100% {
-        background-image: url("ARimage5.jpg");
-    }
-}
-
-.imageshover {
-    margin-top: 40px;
-    flex-direction: row;
-    width: 100px;
-    margin-right: 80px;
-    border: solid;
-    border-color: black;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-.imageshover:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.imho {
-    display: flex;
-    justify-content: space-between;
-}
-
-#nomEntreprise {
-    margin-right: 137px;
-    display: flex;
-    justify-content: space-around;
-    color: rgb(21, 134, 240);
-    font-style: oblique;
-    font-size: 62px;
-    text-shadow: 3px 3px 2px rgb(43, 40, 40);
-}
-
-#bodyAR {
-    background-image: url("photocontact.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 22% 4%;
-    margin: 0px;
-    padding: 0px;
-}
-
-#cadre {
-    width: 322px;
-    height: 245px;
-    position: absolute;
-    margin-left: 39%;
-    margin-top: 1%;
-    border: solid 2px black;
-    background-color: #68b2bc3d;
-    padding-left: 23px;
-}
-
-textarea {
-    color: rgb(79, 127, 199);
-}
-
-#footAR {
-    margin-top: 527px;
-    height: 50px;
-    background-color: rgb(40, 43, 43);
-}
-
-.carré {
-    text-align: center;
 }
 
 
@@ -260,4 +149,133 @@ textarea {
 
 #sectionfooter {
     margin-bottom: 100px;
+}
+
+
+/* -------------------- REALISATIONS -------------------- */
+
+#ARbody {
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 22% 4%;
+}
+
+.h1rea {
+    font-style: italic;
+    text-align: center;
+    font-size: 200%;
+    font-variant: small-caps;
+    color: white;
+}
+
+.titres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.diaporama {
+    width: 380px;
+    height: 300px;
+    border: 3px solid #333;
+    background-image: url(ARimage1.jpg);
+    animation-name: diapo1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    margin: auto;
+}
+
+@keyframes diapo1 {
+    20% {
+        background-image: url("ARimage1.jpg");
+    }
+    40% {
+        background-image: url("ARimage2.jpg");
+    }
+    60% {
+        background-image: url("ARimage3.jpg");
+    }
+    80% {
+        background-image: url("ARimage4.jpg");
+    }
+    100% {
+        background-image: url("ARimage5.jpg");
+    }
+}
+
+.imageshover {
+    margin-top: 40px;
+    width: 100px;
+    margin-right: 80px;
+    border: solid;
+    border-color: black;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imageshover:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.positionimages {
+    margin: auto;
+}
+
+.imho {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nomEntreprise {
+    justify-content: space-around;
+    color: rgb(21, 134, 240);
+    font-style: oblique;
+    font-size: 62px;
+    text-shadow: 3px 3px 2px rgb(43, 40, 40);
+    text-align: center;
+}
+
+
+/* -------------------- CONTACT -------------------- */
+
+#bodyAR {
+    background-image: url("photocontact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 22% 4%;
+}
+
+#cadre {
+    text-align: center;
+    width: 422px;
+    height: 345px;
+    margin: auto;
+    border: solid 2px black;
+    background-color: #68b2bc3d;
+}
+
+textarea {
+    color: rgb(79, 127, 199);
+}
+
+.carré {
+    text-align: center;
+    width: 300px;
+}
+
+.contacth1 {
+    font-size: 300%;
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
 }
