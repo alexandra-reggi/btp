@@ -279,3 +279,11 @@ textarea {
     text-align: center;
     font-variant: small-caps;
 }
+
+.maincont {
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 422px;
+}
